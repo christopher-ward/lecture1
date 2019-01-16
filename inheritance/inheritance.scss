@@ -6,8 +6,20 @@
   padding: 20px;
   margin: 20px;
 }
+//%message means just a generic message
 
 .success {
   @extend %message;
+  //take all styling from %message before and use it but also add the additional styling below. Same for .warning and .error
   background-color: green;
+}
+
+.warning {
+  @extend %message;
+  background-color: orange;
+}
+
+.error {
+  @extend %message;
+  background-color: red;
 }
